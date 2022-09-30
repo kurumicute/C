@@ -10,31 +10,31 @@
 <!-- partial:index.partial.html -->
 <div id="app">
   <div class="row">
-    <label for="decimal">Decimal</label>
+    <label for="decimal">十進位</label>
     <input id="decimal" type="text" v-model.trim="decNum" @input="currInput='dec'" pattern="[0-9]+(.[0-9]+)?"/>
   </div>
   <div class="row">
-    <label for="binary">Binary</label>
+    <label for="binary">二進位</label>
     <input id="binary" type="text" v-model.trim="binNum" @input="currInput='bin'" pattern="[0-1]+(.[0-1]+)?"/>
   </div>
   <div class="row">
-    <label for="quaternary">quaternary</label>
+    <label for="quaternary">四進位</label>
     <input id="quaternary" type="text" v-model.trim="aNum" @input="currInput='a'" pattern="[0-3]+(.[0-3]+)?"/>
   </div>
   <div class="row">
-    <label for="hexadecimal">hexadecimal</label>
+    <label for="hexadecimal">六進位</label>
     <input id="hexadecimal" type="text" v-model.trim="bNum" @input="currInput='b'" pattern="[0-5]+(.[0-5]+)?"/>
   </div>
   <div class="row">
-    <label for="octal">Octal</label>
+    <label for="octal">八進位</label>
     <input id="octal" type="text" v-model.trim="octalNum" @input="currInput='octal'" pattern="[0-7]+(.[0-7]+)?"/>
   </div>
   <div class="row">
-    <label for="Dodecimal">Dodecimal</label>
+    <label for="Dodecimal">十二進位</label>
     <input id="Dodecimal" type="text" v-model.trim="cNum" @input="currInput='c'" pattern="[A-Ba-b0-9]+(.[A-Ba-b0-9]+)?"/>
   </div>
   <div class="row">
-    <label for="hex">Hex</label>
+    <label for="hex">十六進位</label>
     <input id="hex" type="text" v-model.trim="hexNum" @input="currInput='hex'" pattern="[A-Fa-f0-9]+(.[A-Fa-f0-9]+)?"/>
   </div>
   <div class="btnClear" @click="clear">clear</div>
